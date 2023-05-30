@@ -1,4 +1,23 @@
-body {
+html {
     background: rgb(58,180,78);
     background: linear-gradient(323deg, rgba(58,180,78,1) 0%, rgba(223,148,148,1) 43%, rgba(255,230,230,1) 100%);
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 64pt;
+    color: #235B5B;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+}
+
+.content {
+    background-color: #D0E6D0;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #A5D0A5;
+    border-radius: 10px 20px 30px 40px/30px;
 }
