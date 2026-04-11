@@ -1,23 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:wght@900&display=swap');
+
 html {
-    background: rgb(58,180,78);
-    background: linear-gradient(323deg, rgba(58,180,78,1) 0%, rgba(223,148,148,1) 43%, rgba(255,230,230,1) 100%);
-    background-attachment: fixed;
+    background-color: #F3F2DA;
 }
 
-h1 {
-    font-size: 64pt;
-    color: #235B5B;
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    width: 50%;
+    padding: 12px;
+    min-height: 100px;
+}
+
+.rows:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+.introduciton {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #548858;
+}
+
+h2 {
+    font-size: 48pt;
+    font-family: 'Josefin Sans';
+    /* font-weight: 800; */
+    color: #548858;
     text-align: center;
 }
-
-.title {
-    font-family: 'Roboto Slab', serif;
+.links {
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 20px;
 }
 
-.content {
-    background-color: #D0E6D0;
-    width: 100%;
-    height: fit-content;
+h3 {
+    font-size: 24pt;
+    font-family: 'Josefin Sans';
+    /* font-weight: 800; */
+    color: #548858;
+    text-align: center;
+}
+a {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color:#548858
+}
+a:active, a:hover{
+    text-decoration:underline;
+}
+.star {
+    background: #F3F2DA;
+    width: 80px;
+    height:60px;
+    position: relative;
+    text-align: center;
     border: 1px solid #A5D0A5;
-    border-radius: 10px 20px 30px 40px/30px;
+}
+.star:before,
+.star:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height:60px;
+    background: #F3F2DA;
+}
+.star:before {
+    transform: rotate(30deg);
+}
+.star:after {
+    transform: rotate(60deg);
 }
