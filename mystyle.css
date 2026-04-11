@@ -4,20 +4,64 @@ html {
     background-color: #F3F2DA;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    width: 50%;
+    padding: 12px;
+    min-height: 100px;
+}
+
+.rows:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+.introduciton {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #548858;
+}
+
 h2 {
     font-size: 48pt;
     font-family: 'Josefin Sans';
-    font-weight: 800;
+    /* font-weight: 800; */
     color: #548858;
     text-align: center;
 }
-
-h1 {
-    font-size:
+.links {
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 20px;
 }
 
+h3 {
+    font-size: 24pt;
+    font-family: 'Josefin Sans';
+    /* font-weight: 800; */
+    color: #548858;
+    text-align: center;
+}
+a {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color:#548858
+}
+a:active, a:hover{
+    text-decoration:underline;
+}
 .star {
-    background: #F3F2DA
+    background: #F3F2DA;
     width: 80px;
     height:60px;
     position: relative;
